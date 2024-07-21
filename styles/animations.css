@@ -12,3 +12,41 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+
+@keyframes moving {
+  from {
+    inset-inline-start: -20px;
+  }
+
+  to {
+    inset-inline-start: -16px;
+  }
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes opaciting {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contour-offing {
+  100% {
+    fill: var(--icon-button-contour-color);
+  }
+}
+

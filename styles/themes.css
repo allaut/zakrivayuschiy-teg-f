@@ -4,3 +4,50 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --weight-heading-font: 800;
+  --weight-content-font: 500;
+  --weight-heading-font-variable: 785;
+  --weight-content-font-variable: 465;
+  --background-page-color: #000;
+  --accent-page-color: #00CC14;
+  --button-text-color: #00CC14;
+  --icon-button-contour-color: #00CC14;
+  --background-image: repeating-linear-gradient(90deg, #000 0px 2px, rgb(0 0 0 / 0) 2px 4px),
+                      repeating-linear-gradient(0deg, #000 0px 2px, rgb(0 0 0 / 0) 2px 4px),
+                      linear-gradient(#007f0c, #004306);
+}
+
+:root.theme-light {
+  --weight-heading-font: 700;
+  --weight-content-font: 400;
+  --weight-heading-font-variable: 700;
+  --weight-content-font-variable: 400;
+  --background-page-color: #FFF;
+  --accent-page-color: #000;
+  --icon-button-contour-color: #000000;
+  --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px ), 
+                      repeating-linear-gradient(0deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px ), 
+                      linear-gradient( #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100% );
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --weight-heading-font: 800;
+    --weight-content-font: 500;
+    --weight-heading-font-variable: 785;
+    --weight-content-font-variable: 465;
+    --background-page-color: #000;
+    --accent-page-color: #00CC14;
+    --button-text-color: #00CC14;
+    --icon-button-contour-color: #00CC14;
+    --background-image: repeating-linear-gradient(90deg, #000 0px 2px, rgb(0 0 0 / 0) 2px 4px),
+                        repeating-linear-gradient(0deg, #000 0px 2px, rgb(0 0 0 / 0) 2px 4px),
+                        linear-gradient(#007f0c, #004306);
+  }
+}
+
+
+

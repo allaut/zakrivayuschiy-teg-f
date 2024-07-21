@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --accent-font-family: "PressStart2P";
+  --main-font-family-variable: "Inter-Flex-Variable";
+  --main-font-family: "Inter";
+  --weight-heading-font: 700;
+  --weight-content-font: 400;
+  --weight-heading-font-variable: 700;
+  --weight-content-font-variable: 400;
+  --background-page-color: #FFF;
+  --accent-page-color: #000;
+  --button-text-color: #FFF;
+  --icon-button-contour-color: #000000;
+  --icon-button-fill-color: #FF0000;
+  --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px ), 
+                      repeating-linear-gradient(0deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px ), 
+                      linear-gradient( #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100% );
+}
+
+
