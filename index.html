@@ -19,13 +19,13 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="logo">&lt;/html&gt;</div>
+      <a class="logo">&lt;/html&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
+        <ul class="theme-menu__list" aria-label="Выбор темы отображения сайта">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button type="button" data-theme="dark" class="theme-menu__button" aria-label="Темная тема">
               Темно
             </button>
           </li>
@@ -35,12 +35,13 @@
               data-theme="auto"
               disabled
               class="theme-menu__button"
+              aria-label="Автоматическая тема"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button type="button" data-theme="light" class="theme-menu__button" aria-label="Светлая тема">
               Светло
             </button>
           </li>
@@ -70,7 +71,7 @@
             Место для ваших воспоминаний о&nbsp;начале обучения.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +102,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -132,7 +133,7 @@
             Место для ваших воспоминаний о&nbsp;начале первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +164,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -191,7 +192,7 @@
             Место для ваших воспоминаний об&nbsp;окончании первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +223,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -252,7 +253,7 @@
             Место для ваших воспоминаний о&nbsp;начале второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +284,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -313,7 +314,7 @@
             Место для ваших воспоминаний об&nbsp;окончании второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -344,7 +345,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -372,7 +373,7 @@
             Место для ваших воспоминаний о&nbsp;начале третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -403,7 +404,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -433,7 +434,7 @@
             Место для ваших воспоминаний об&nbsp;окончании третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -464,7 +465,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -496,7 +497,7 @@
             вы&nbsp;чувствуете в&nbsp;этой точке пути.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Иконка Нравится">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -527,7 +528,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="button card__like-button" type="button">
+            <button class="button card__like-button" type="button" aria-label="Кнопка Нравится">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -539,7 +540,7 @@
         onclick="window['dialog'].showModal()"
       >
         <svg class="save__button-image" viewBox="0 0 39 39">
-          <use href="#floppy"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -548,64 +549,16 @@
     <dialog class="dialog" id="dialog">
       <form class="dialog__form" method="dialog">
         <svg class="dialog__image" viewBox="0 0 39 39">
-          <use href="#floppy"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        <button class="button dialog__button" type="submit">
+        <button class="button dialog__button" type="submit" aria-label="Кнопка Сохранить">
           <span class="button__text">ок</span>
         </button>
       </form>
     </dialog>
 
-    <script src="/scripts/like.js"></script>
-    <script src="/scripts/set-theme.js"></script>
+    <script src="./scripts/like.js"></script>
+    <script src="./scripts/set-theme.js"></script>
   </body>
 </html>
-
-<svg
-  width="39"
-  height="39"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <symbol id="floppy" stroke="currentColor" fill="currentColor">
-    <path
-      fill="currentColor"
-      d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0z"
-    />
-    <path
-      fill="currentColor"
-      d="M30.003 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM20.999 0v3h-3V0z"
-    />
-    <path fill="currentColor" d="M18 0v3h-3V0zM14.999 0v3h-3V0z" />
-    <path fill="currentColor" d="M12 0v3H9V0zM8.996 0v3h-3V0z" />
-    <path
-      fill="currentColor"
-      d="M6 0v3H3V0zM36 3v3h-3V3zM8.996 6v3h-3V6zM8.996 3v3h-3V3zM8.996 9v3h-3V9zM30.003 6v3h-3V6zM30.003 3v3h-3V3zM30.003 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30.003 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM20.999 12v3h-3v-3z"
-    />
-    <path fill="currentColor" d="M18 12v3h-3v-3zM14.999 12v3h-3v-3z" />
-    <path
-      fill="currentColor"
-      d="M12 12v3H9v-3zM8.996 12v3h-3v-3zM33 21v3h-3v-3z"
-    />
-    <path
-      fill="currentColor"
-      d="M30.003 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM20.999 21v3h-3v-3z"
-    />
-    <path fill="currentColor" d="M18 21v3h-3v-3zM14.999 21v3h-3v-3z" />
-    <path
-      fill="currentColor"
-      d="M12 21v3H9v-3zM8.996 21v3h-3v-3zM33 24v3h-3v-3zM8.996 24v3h-3v-3zM33 27v3h-3v-3zM8.996 27v3h-3v-3zM33 30v3h-3v-3zM8.996 30v3h-3v-3zM8.996 33v3h-3v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3z"
-    />
-    <path
-      fill="currentColor"
-      d="M30.003 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM20.999 36v3h-3v-3z"
-    />
-    <path fill="currentColor" d="M18 36v3h-3v-3zM14.999 36v3h-3v-3z" />
-    <path fill="currentColor" d="M12 36v3H9v-3zM8.996 36v3h-3v-3z" />
-    <path
-      fill="currentColor"
-      d="M6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"
-    />
-  </symbol>
-</svg>

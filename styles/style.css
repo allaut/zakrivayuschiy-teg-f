@@ -110,7 +110,7 @@
   position: absolute;
   opacity: 60%;
   color: var(--accent-page-color);
-  animation: moving 0.5s infinite ease-in-out reverse;
+  animation: moving 1s infinite ease-in-out;
   inset-inline-start: -20px;
 }
 
@@ -171,8 +171,8 @@
   line-height: 14px;
   text-align: left;
   mix-blend-mode: hard-light;
-  inset-inline-end: 11px;
-  inset-block-start: 23px;
+  inset-inline-end: calc(11px + (25 - 11) * ((100vw - 375px) / (1440 - 375)));;
+  inset-block-start: calc(23px + (25 - 23) * ((100vw - 375px) / (1440 - 375)));;
 }
 
 @supports ((text-stroke: 1px var(--background-page-color)) or
@@ -307,16 +307,18 @@
 }
 
 .card__like-button {
-  padding: 10px 35px;
-  background-color: transparent;
+  padding: 10px 0;
+  min-inline-size: 130px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-page-color);
   border: 2px solid var(--accent-page-color);
-  transition: box-shadow 0.5s;
-  transition-timing-function: ease-in-out;
-  max-inline-size: 130px;
+  color: var(--button-text-color);
 }
 
 .button {
   position: relative;
+
 }
 
 .button:focus {
@@ -335,7 +337,7 @@
   inset: 0;
   z-index: 1;
   background-color: var(--accent-page-color);
-  transition: transform 0.5s ease-in-out;
+  transition:  0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -343,6 +345,7 @@
 .button:hover::before {
   transform: scaleX(1);
   cursor: pointer;
+  color: var(--button-text-color);
 }
 
 .button__text {
@@ -364,8 +367,9 @@
   align-items: center;
   gap: 9px;
   width: 100%;
-  margin: auto;
+  margin: calc(2px + (0 - 2) * ((100vw - 375px) / (1440 - 375))) auto calc(84px + (55 - 84) * ((100vw - 375px) / (1440 - 375)));
   padding: 15px 0;
+  border: 2px solid var(--accent-page-color);
   background-color: var(--background-page-color);
   transition: box-shadow 0.5s;
   transition-timing-function: ease-in-out;
@@ -380,7 +384,7 @@
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
-  block-size: 28px;
+  block-size: calc(28px + (21 - 28) * ((100vw - 375px) / (1440 - 375)));
   inline-size: auto;
   mix-blend-mode: difference;
 }
@@ -430,6 +434,7 @@
   padding: 10px 0;
   text-transform: uppercase;
   background-color: var(--background-page-color);
+  border: 2px solid var(--accent-page-color);
 }
 
 .dialog::backdrop {
